@@ -1,4 +1,5 @@
 from pathlib import Path
+from os import system
 
 # base= Path.home()
 # guia = Path(base,"Barcelona", "SagradraFamilia.txt")
@@ -13,3 +14,6 @@ guia = Path(Path.home(),'Desktop','PythonProjects','pythonlearn','Path',"Europa"
 
 for txt in Path(guia).glob("**/*.txt"):
     print(txt)
+
+  
+system('cls')
