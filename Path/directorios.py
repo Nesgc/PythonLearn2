@@ -1,6 +1,9 @@
 from pathlib import Path
-from os import system
+import os
 
+rutabase=os.path.abspath(os.getcwd())
+print('Bienvenido usuario, la ruta de acceso al directorio se encuentra en: ')
+print(Path(rutabase,'Recetas'))
 # base= Path.home()
 # guia = Path(base,"Barcelona", "SagradraFamilia.txt")
 # guia2=guia.with_name("La_pedrera.txt")
@@ -10,10 +13,16 @@ from os import system
 # #Para obtener la carpeta parent anterior
 # print
 
-guia = Path(Path.home(),'Desktop','PythonProjects','pythonlearn','Path',"Europa")
+# guia = Path(Path.home(),'Desktop','PythonProjects','pythonlearn','Path',"Europa")
 
-for txt in Path(guia).glob("**/*.txt"):
-    print(txt)
+# for txt in Path(guia).glob("**/*.txt"):
+#     print(txt)
 
   
-system('cls')
+# system('cls')
+
+# def abrir_leer(ruta_archivo):
+#     with open(ruta_archivo, 'r') as archivo:
+#         le=archivo.read()
+#         return(le)
+       
